@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konto löschen - Newton Delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            color: #202124;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 1px solid #dadce0;
+            padding: 16px 0;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 300;
+            color: #202124;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #5f6368;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            background: white;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        .warning-box {
+            background: #fef7e0;
+            border-left: 4px solid #f9ab00;
+            padding: 16px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background: #e8f0fe;
+            border-left: 4px solid #1a73e8;
+            padding: 16px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        .danger-box {
+            background: #fce8e6;
+            border-left: 4px solid #ea4335;
+            padding: 16px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #202124;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-method {
+            background: #f8f9fa;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .contact-method h3 {
+            color: #1a73e8;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .email-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .step-number {
+            background: #1a73e8;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #5f6368;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">← Zurück zur Übersicht</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">🗑️ Konto löschen</h1>
+        <div class="subtitle">
+            Beantragen Sie die vollständige Löschung Ihres Kontos und aller zugehörigen Daten
+        </div>
+
+        <div class="content">
+            <div class="danger-box">
+                <strong>⚠️ Wichtiger Hinweis:</strong> Die Konto-Löschung ist dauerhaft und kann nicht rückgängig
+                gemacht werden. Alle Ihre Daten, Bestellhistorie und Präferenzen werden permanent entfernt.
+            </div>
+
+            <h2>Was wird gelöscht?</h2>
+            <ul>
+                <li>Ihr Benutzer-Account und Profil</li>
+                <li>Alle persönlichen Informationen (Name, E-Mail, Adressen)</li>
+                <li>Bestellhistorie und Präferenzen</li>
+                <li>Gespeicherte Zahlungsmethoden</li>
+                <li>App-Einstellungen und Benachrichtigungseinstellungen</li>
+                <li>Alle mit Ihrem Account verknüpften Daten</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>📅 Bearbeitungszeit:</strong> Die vollständige Löschung kann bis zu 30 Tage dauern, um allen
+                rechtlichen Anforderungen zu entsprechen.
+            </div>
+
+            <h2>Bevor Sie fortfahren:</h2>
+            <ul>
+                <li>Stellen Sie sicher, dass alle offenen Bestellungen abgeschlossen sind</li>
+                <li>Exportieren Sie wichtige Daten, die Sie behalten möchten</li>
+                <li>Bedenken Sie, dass Sie nach der Löschung ein neues Konto erstellen müssen</li>
+                <li>Prüfen Sie alternative Optionen wie das Deaktivieren des Kontos</li>
+            </ul>
+
+            <h2>So beantragen Sie die Konto-Löschung:</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <strong>E-Mail senden</strong><br>
+                        Schicken Sie eine E-Mail von der in Ihrem Account registrierten E-Mail-Adresse.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <strong>Identität bestätigen</strong><br>
+                        Geben Sie Ihre registrierte E-Mail-Adresse und den Grund für die Löschung an.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <strong>Bestätigung erhalten</strong><br>
+                        Sie erhalten eine Bestätigung mit weiteren Anweisungen.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <strong>Löschung abschließen</strong><br>
+                        Bestätigen Sie die Löschung über den Link in der E-Mail.
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <h3>📧 Konto-Löschung beantragen</h3>
+                <p>
+                    <strong>E-Mail:</strong>
+                    <a href="mailto:account-deletion@newton-dynamics.com?subject=Konto-Löschung%20beantragen&body=Hallo,%0A%0AIch möchte die vollständige Löschung meines Newton Delivery Kontos beantragen.%0A%0AMeine registrierte E-Mail-Adresse: [IHRE E-MAIL]%0AGrund für die Löschung: [OPTIONAL]%0A%0AVielen Dank"
+                        class="email-link">account-deletion@newton-dynamics.com</a>
+                </p>
+                <p><strong>Betreff:</strong> "Konto-Löschung beantragen"</p>
+            </div>
+
+            <div class="info-box">
+                <strong>ℹ️ Benötigen Sie Hilfe?</strong> Falls Sie Fragen haben oder technische Probleme auftreten,
+                kontaktieren Sie zunächst unseren Support unter
+                <a href="mailto:support@newton-dynamics.com" class="email-link">support@newton-dynamics.com</a>
+            </div>
+
+            <h2>Alternative Optionen:</h2>
+            <ul>
+                <li><strong>Konto deaktivieren:</strong> Temporäre Deaktivierung ohne Datenlöschung</li>
+                <li><strong>Daten-Export:</strong> Ihre Daten vor der Löschung herunterladen</li>
+                <li><strong>Benachrichtigungen anpassen:</strong> Nur bestimmte Nachrichten deaktivieren</li>
+                <li><strong>Support kontaktieren:</strong> Bei spezifischen Problemen</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>🛡️ Datenschutz:</strong> Nach der vollständigen Löschung können wir keine Daten mehr
+                wiederherstellen. Diese Aktion erfolgt gemäß der DSGVO und ist dauerhaft.
+            </div>
+
+            <h2>Häufige Fragen:</h2>
+            <p><strong>Q: Kann ich meine Daten vor der Löschung exportieren?</strong><br>
+                A: Ja, kontaktieren Sie uns für einen Daten-Export vor der Löschung.</p>
+
+            <p><strong>Q: Was passiert mit meinen offenen Bestellungen?</strong><br>
+                A: Schließen Sie bitte alle Bestellungen ab, bevor Sie die Löschung beantragen.</p>
+
+            <p><strong>Q: Kann ich nach der Löschung wieder ein Konto erstellen?</strong><br>
+                A: Ja, aber alle vorherigen Daten sind dann verloren.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Newton Dynamics</p>
+            <p>
+                <a href="index.html">Zurück zur Übersicht</a> |
+                <a href="privacy-policy.html">Datenschutzerklärung</a> |
+                <a href="mailto:support@newton-dynamics.com">Support</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
