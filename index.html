@@ -33,18 +33,30 @@
         .logo {
             margin-bottom: 50px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .logo img {
-            max-width: 120px;
-            height: auto;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .logo h1 {
             font-size: 28px;
             font-weight: 300;
             color: #202124;
-            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        .logo .tagline {
+            font-size: 14px;
+            color: #5f6368;
+            font-weight: 400;
         }
 
         .subtitle {
@@ -70,7 +82,8 @@
 
         .link-item:hover {
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-color: #4285f4;
+            border-color: #FFA000;
+            transform: translateY(-1px);
         }
 
         .link-item a {
@@ -85,6 +98,9 @@
         .link-item .title {
             font-weight: 500;
             margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .link-item .description {
@@ -100,7 +116,7 @@
         }
 
         .footer a {
-            color: #1a73e8;
+            color: #FFA000;
             text-decoration: none;
         }
 
@@ -117,6 +133,11 @@
                 font-size: 24px;
             }
 
+            .logo img {
+                width: 64px;
+                height: 64px;
+            }
+
             .link-item a {
                 padding: 16px 20px;
             }
@@ -127,12 +148,13 @@
 <body>
     <div class="container">
         <div class="logo">
-            <!-- Logo hier einfügen oder Text verwenden -->
+            <img src="assets/newton-logo-light-64.png" alt="Newton Delivery Logo">
             <h1>Newton Delivery</h1>
+            <div class="tagline">Rechtliche Informationen</div>
         </div>
 
         <div class="subtitle">
-            Rechtliche Informationen und Datenschutz
+            Datenschutz und rechtliche Dokumente für unsere App
         </div>
 
         <div class="links-container">
@@ -166,10 +188,10 @@
         </div>
 
         <div class="footer">
-            <p>&copy; 2024 Newton Dynamics</p>
+            <p>&copy; 2025 Newton Dynamics</p>
             <p>
-                <a href="mailto:legal@newton-dynamics.com">legal@newton-dynamics.com</a> |
-                <a href="mailto:support@newton-dynamics.com">Support</a>
+                <a href="mailto:info@newton-dynamics.com">Legal</a> |
+                <a href="mailto:info@newton-dynamics.com">Support</a>
             </p>
         </div>
     </div>

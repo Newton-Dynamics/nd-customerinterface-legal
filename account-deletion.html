@@ -29,10 +29,38 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #202124;
+        }
+
+        .nav-logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+
+        .nav-logo span {
+            font-weight: 500;
+            font-size: 16px;
         }
 
         .nav a {
-            color: #1a73e8;
+            color: #FFA000;
             text-decoration: none;
             font-size: 14px;
         }
@@ -79,8 +107,8 @@
         }
 
         .info-box {
-            background: #e8f0fe;
-            border-left: 4px solid #1a73e8;
+            background: #fff8e1;
+            border-left: 4px solid #FFA000;
             padding: 16px;
             margin-bottom: 24px;
             border-radius: 4px;
@@ -123,14 +151,14 @@
         }
 
         .contact-method h3 {
-            color: #1a73e8;
+            color: #FFA000;
             font-size: 16px;
             font-weight: 500;
             margin-bottom: 8px;
         }
 
         .email-link {
-            color: #1a73e8;
+            color: #FFA000;
             text-decoration: none;
             font-weight: 500;
         }
@@ -153,7 +181,7 @@
         }
 
         .step-number {
-            background: #1a73e8;
+            background: #FFA000;
             color: white;
             border-radius: 50%;
             width: 24px;
@@ -180,12 +208,25 @@
         }
 
         .footer a {
-            color: #1a73e8;
+            color: #FFA000;
             text-decoration: none;
         }
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .nav-left {
+                flex-direction: column;
+                gap: 8px;
+            }
         }
     </style>
 </head>
@@ -193,6 +234,12 @@
 <body>
     <div class="header">
         <div class="nav">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo">
+                    <img src="assets/newton-logo-light-64.png" alt="Newton Delivery">
+                    <span>Newton Delivery</span>
+                </a>
+            </div>
             <a href="index.html">← Zurück zur Übersicht</a>
         </div>
     </div>
@@ -272,8 +319,8 @@
                 <h3>📧 Konto-Löschung beantragen</h3>
                 <p>
                     <strong>E-Mail:</strong>
-                    <a href="mailto:account-deletion@newton-dynamics.com?subject=Konto-Löschung%20beantragen&body=Hallo,%0A%0AIch möchte die vollständige Löschung meines Newton Delivery Kontos beantragen.%0A%0AMeine registrierte E-Mail-Adresse: [IHRE E-MAIL]%0AGrund für die Löschung: [OPTIONAL]%0A%0AVielen Dank"
-                        class="email-link">account-deletion@newton-dynamics.com</a>
+                    <a href="mailto:info@newton-dynamics.com?subject=Konto-Löschung%20beantragen&body=Hallo,%0A%0AIch möchte die vollständige Löschung meines Newton Delivery Kontos beantragen.%0A%0AMeine registrierte E-Mail-Adresse: [IHRE E-MAIL]%0AGrund für die Löschung: [OPTIONAL]%0A%0AVielen Dank"
+                        class="email-link">info@newton-dynamics.com</a>
                 </p>
                 <p><strong>Betreff:</strong> "Konto-Löschung beantragen"</p>
             </div>
@@ -309,11 +356,11 @@
         </div>
 
         <div class="footer">
-            <p>&copy; 2024 Newton Dynamics</p>
+            <p>&copy; 2025 Newton Dynamics</p>
             <p>
                 <a href="index.html">Zurück zur Übersicht</a> |
                 <a href="privacy-policy.html">Datenschutzerklärung</a> |
-                <a href="mailto:support@newton-dynamics.com">Support</a>
+                <a href="mailto:info@newton-dynamics.com">Support</a>
             </p>
         </div>
     </div>
